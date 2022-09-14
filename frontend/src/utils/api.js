@@ -71,6 +71,7 @@ class Api {
 const api = new Api({
   BASE_URL,
   headers: {
+    "Accept": "application/json",
     "Content-Type": "application/json",
   },
 });

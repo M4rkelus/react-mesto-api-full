@@ -1,4 +1,4 @@
-import { AUTH_BASE_URL } from "./const";
+import { BASE_URL } from "./const";
 
 export const getResponse = (response) => {
   if (response.ok) return response.json();
@@ -6,7 +6,7 @@ export const getResponse = (response) => {
 };
 
 export const register = (email, password) => {
-  return fetch(`${AUTH_BASE_URL}/signup`, {
+  return fetch(`${BASE_URL}/signup`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -21,7 +21,7 @@ export const register = (email, password) => {
 };
 
 export const login = (email, password) => {
-  return fetch(`${AUTH_BASE_URL}/signin`, {
+  return fetch(`${BASE_URL}/signin`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export const logout = () => {
 }
 
 export const checkToken = (token) => {
-  return fetch(`${AUTH_BASE_URL}/users/me`, {
+  return fetch(`${BASE_URL}/users/me`, {
     method: 'GET',
     headers: {
       'Accept': 'application/json',
