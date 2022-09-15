@@ -36,7 +36,7 @@ app.use(requestLogger); // connect request logger
 app.use(routes); // all routes logic
 app.use(errorLogger); // connect error logger
 app.use(errors()); // celebrate errors Handler
-app.use(error); // centralized error handler
+// app.use(error); // centralized error handler
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
