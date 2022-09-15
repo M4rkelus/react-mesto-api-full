@@ -18,7 +18,7 @@
     "build": "rimraf build && react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "server-deploy": "npm run build && scp -r ./build/* m4rkelus@158.160.10.50:/home/m4rkelus/mesto-frontend"
+    "server-deploy": "npm run build && scp -r ./build/* markus@158.160.7.181:/home/markus/mesto-frontend"
   },
   "homepage": "https://m4rkelus.github.io/react-mesto-auth/",
   "eslintConfig": {

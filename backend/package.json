@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint .",
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "deploy": "scp -r ./* m4rkelus@158.160.10.50:/home/m4rkelus/mesto-backend"
+    "dev": "nodemon app.js"
   },
   "author": "Mark Pirogov",
   "license": "ISC",
