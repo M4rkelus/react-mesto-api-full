@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
+const cors = require('cors');
 const { errors } = require('celebrate');
 
 const routes = require('./routes');
@@ -10,6 +11,18 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 3000 } = process.env;
 const app = express();
+
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:3001',
+    'http://mesto-frontend-mp.nomoredomains.sbs',
+    'http://mesto-backtend-mp.nomoredomains.sbs',
+    'https://mesto-frontend-mp.nomoredomains.sbs',
+    'https://mesto-backtend-mp.nomoredomains.sbs',
+  ],
+  credentials: true,
+}));
 
 app.use(helmet());
 app.use(cookieParser());
