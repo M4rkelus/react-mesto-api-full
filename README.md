@@ -5,4 +5,4 @@ Backend [http://mesto-backtend-mp.nomoredomains.sbs](http://mesto-backtend-mp.no
 
 Frontend [http://mesto-frontend-mp.nomoredomains.sbs](http://mesto-frontend-mp.nomoredomains.sbs)
 
-Public IP 158.160.10.50
+Public IP 158.160.7.181
