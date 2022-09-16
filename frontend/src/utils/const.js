@@ -1,1 +1,1 @@
-export const BASE_URL = "http://mesto-backtend-mp.nomoredomains.sbs";
+export const BASE_URL = "https://mesto-backtend-mp.nomoredomains.sbs";
